@@ -55,7 +55,6 @@ func isUSBStorage(device string) bool {
 	out, err := exec.Command(cmd, args...).Output()
 
 	if err != nil {
-		log.Printf("Error checking device %s: %s", device, err)
 		return false
 	}
 
